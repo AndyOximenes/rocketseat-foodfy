@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  padding: 10px 450px 20px 450px;
+}
+
+/* === MENU === */
+
+.menu-bar {
+  margin: 3.3% auto 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+header .logo img {
+  width: 90.6px;
+  height: 26.9px;
+}
+
+.links {
+  display: inline;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2.1%;
+}
+/* === MAIN === */
+
+main {
+  background-color: #fbdfdb;
+  margin-top: 2.7%;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 366px;
+  position: relative;
+}
+
+.main_text {
+  width: 350px;
+  padding: 60px;
+}
+
+.main_text h1 {
+  position: absolute;
+  margin-top: 5%;
+  font-size: 32px;
+  color: #111111;
+  width: 350px;
+}
+
+.main_text p {
+  position: absolute;
+  bottom: 33%;
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  max-width: 330px;
+}
+
+.hero img {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+/* === CARDS === */
+
+.cards_presentation {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #111111;
+  margin: 4.5% auto 1.8% auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 20px;
+}
+
+.cards img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.cards h3 {
+  font-size: 18px;
+  color: #111111;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 2%;
+}
+
+/* === FOOTER === */
+
+footer {
+  padding: 23px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999;
+  margin: 0;
+  background: #eee;
+}
