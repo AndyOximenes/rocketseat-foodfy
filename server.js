@@ -22,6 +22,16 @@ server.get("/about", (request, response) => {
   return response.render("about");
 });
 
+server.get("/recipes", (request, response) => {
+  return response.render("recipes", { items: recipes });
+});
+
+server.get("/recipes/:recipeId", (req, res) => {
+  const { recipeId } = req.params;
+  const recipe = recipes[recipeId];
+  return res.render("recipe", { recipe });
+});
+
 server.listen(5000, () => {
   console.log("Server is running - Port 5000");
 });

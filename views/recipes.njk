@@ -1,216 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
+{% extends "layout.njk" %}
 
-  <body>
-    <section class="content">
-      <header class="menu-bar">
-        <a href="/" class="logo"><img src="/assets/logo.png" alt="" /></a>
-        <div class="links">
-          <a href="/about.html">Sobre</a>
-          <strong>
-            <a href="/recipes.html">Receitas</a>
-          </strong>
-        </div>
-      </header>
+{% block head %}
+  <title>Receitas - Foodfy</title>
 
-      <section class="cards recipes">
-        <div class="card" id="burger">
-          <div class="card_image">
-            <img src="assets/burger.png" alt="burger" />
-          </div>
+{% endblock %}
 
-          <div class="card_title">
-            <h3>Triplo bacon burger</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Jorge Relato</p>
-          </div>
-        </div>
-
-        <div class="card" id="pizza">
-          <div class="card_image">
-            <img src="assets/pizza.png" alt="pizza" />
-          </div>
-
-          <div class="card_title">
-            <h3>Pizza 4 estações</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Fabiana Melo</p>
-          </div>
-        </div>
-
-        <div class="card" id="espaguete">
-          <div class="card_image">
-            <img src="assets/espaguete.png" alt="espaguete" />
-          </div>
-
-          <div class="card_title">
-            <h3>Espaguete ao alho</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Júlia Kinoto</p>
-          </div>
-        </div>
-
-        <div class="card" id="lasanha">
-          <div class="card_image">
-            <img src="assets/lasanha.png" alt="lasanha" />
-          </div>
-
-          <div class="card_title">
-            <h3>Lasanha mac n’ cheese</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Juliano Vieira</p>
-          </div>
-        </div>
-
-        <div class="card" id="doce">
-          <div class="card_image">
-            <img src="assets/doce.png" alt="doce" />
-          </div>
-
-          <div class="card_title">
-            <h3>Docinhos pão-do-céu</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Ricardo Golvea</p>
-          </div>
-        </div>
-
-        <div class="card" id="asinhas">
-          <div class="card_image">
-            <img src="assets/asinhas.png" alt="asinhas" />
-          </div>
-
-          <div class="card_title">
-            <h3>Asinhas de frango ao barbecue</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Vania Steroski</p>
-          </div>
-        </div>
-
-        <div class="card" id="burger">
-          <div class="card_image">
-            <img src="assets/burger.png" alt="burger" />
-          </div>
-
-          <div class="card_title">
-            <h3>Triplo bacon burger</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Jorge Relato</p>
-          </div>
-        </div>
-
-        <div class="card" id="pizza">
-          <div class="card_image">
-            <img src="assets/pizza.png" alt="pizza" />
-          </div>
-
-          <div class="card_title">
-            <h3>Pizza 4 estações</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Fabiana Melo</p>
-          </div>
-        </div>
-
-        <div class="card" id="espaguete">
-          <div class="card_image">
-            <img src="assets/espaguete.png" alt="espaguete" />
-          </div>
-
-          <div class="card_title">
-            <h3>Espaguete ao alho</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Júlia Kinoto</p>
-          </div>
-        </div>
-
-        <div class="card" id="lasanha">
-          <div class="card_image">
-            <img src="assets/lasanha.png" alt="lasanha" />
-          </div>
-
-          <div class="card_title">
-            <h3>Lasanha mac n’ cheese</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Juliano Vieira</p>
-          </div>
-        </div>
-
-        <div class="card" id="doce">
-          <div class="card_image">
-            <img src="assets/doce.png" alt="doce" />
-          </div>
-
-          <div class="card_title">
-            <h3>Docinhos pão-do-céu</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Ricardo Golvea</p>
-          </div>
-        </div>
-
-        <div class="card" id="asinhas">
-          <div class="card_image">
-            <img src="assets/asinhas.png" alt="asinhas" />
-          </div>
-
-          <div class="card_title">
-            <h3>Asinhas de frango ao barbecue</h3>
-          </div>
-
-          <div class="card_author">
-            <p>por Vania Steroski</p>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <div class="modal-overlay">
-      <div class="modal">
-        <div class="modal-content">
-          <img src="" alt="" />
-          <h3 class="title"></h3>
-          <p class="author"></p>
-          <div class="close-modal">
-            <a href="" id="btn_fechar">Fechar</a>
-          </div>
-        </div>
+{% block menu %}
+  <section class="content">
+    <header class="menu-bar">
+      <a href="/" class="logo"><img src="/assets/logo.png" alt=""/></a>
+      <div class="links">
+        <a href="/about">Sobre</a>
+        <strong>
+          <a href="/recipes">Receitas</a>
+        </strong>
       </div>
-    </div>
+    </header>
+  </section>
+{% endblock %}
 
-    <footer>
-      <p>Todos os direitos reservados, receitas Foodfy.</p>
-    </footer>
+{% block content %}
 
-    <script src="scripts.js"></script>
-  </body>
-</html>
+  <section class="content">
+    <section class="cards recipes">
+      {% for item in items %}
+        <div class="card" id="{{ item.title }}">
+          <div class="card_image">
+            <img src="{{ item.image }}" alt="Imagem de {{ item.title }}"/>
+          </div>
+
+          <div class="card_title">
+            <h3>{{ item.title }}</h3>
+          </div>
+
+          <div class="card_author">
+            <p>{{ item.author }}</p>
+          </div>
+        </div>
+      {% endfor %}
+
+    </section>
+  </section>
+
+  <script src="/scripts.js"></script>
+{% endblock %}
