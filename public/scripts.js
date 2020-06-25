@@ -23,3 +23,16 @@ for (let card of cards) {
 //   modalOverlay.classList.remove("active");
 //   modalOverlay.querySelector("iframe").src = "";
 // });
+
+var buttons = document.querySelectorAll(".button-hide");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.target.nextElementSibling.classList.toggle("hide");
+    if (e.target.innerHTML == "ESCONDER") {
+      e.target.innerHTML = "MOSTRAR";
+    } else {
+      e.target.innerHTML = "ESCONDER";
+    }
+  });
+});
