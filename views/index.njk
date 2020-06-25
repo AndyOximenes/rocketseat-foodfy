@@ -14,91 +14,24 @@
       </div>
     </main>
 
-    <h1 class="cards_presentation">Mais acessadas</h1>
+    <h1 class="cards_presentation">Nossas receitas</h1>
+
     <section class="cards">
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/burger.png" alt="burguer"/>
-        </div>
+      {% for item in items %}
+        <div class="card">
+          <div class="card_image">
+            <img src="{{ item.image }}" alt="Imagem de {{ item.title }}"/>
+          </div>
 
-        <div class="card_title">
-          <h3>Triplo bacon burguer</h3>
-        </div>
+          <div class="card_title">
+            <h3>{{ item.title }}</h3>
+          </div>
 
-        <div class="card_author">
-          <p>por Jorge Relato</p>
+          <div class="card_author">
+            <p>{{ item.author }}</p>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/pizza.png" alt="pizza"/>
-        </div>
-
-        <div class="card_title">
-          <h3>Pizza 4 estações</h3>
-        </div>
-
-        <div class="card_author">
-          <p>por Fabiana Melo</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/espaguete.png" alt="espaguete"/>
-        </div>
-
-        <div class="card_title">
-          <h3>Espaguete ao alho</h3>
-        </div>
-
-        <div class="card_author">
-          <p>por Júlia Kinoto</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/lasanha.png" alt="lasanha"/>
-        </div>
-
-        <div class="card_title">
-          <h3>Lasanha mac n’ cheese</h3>
-        </div>
-
-        <div class="card_author">
-          <p>por Juliano Vieira</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/doce.png" alt="doce"/>
-        </div>
-
-        <div class="card_title">
-          <h3>Docinhos pão-do-céu</h3>
-        </div>
-
-        <div class="card_author">
-          <p>por Ricardo Golvea</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_image">
-          <img src="assets/asinhas.png" alt="asinhas"/>
-        </div>
-
-        <div class="card_title">
-          <h3>Asinhas de frango ao barbecue</h3>
-        </div>
-
-        <div class="card_author">
-          <p>por Vania Steroski</p>
-        </div>
-      </div>
+      {% endfor %}
     </section>
 
   </section>
