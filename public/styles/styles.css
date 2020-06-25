@@ -150,6 +150,10 @@ footer {
 
 /* === RECIPES PAGE === */
 
+.card {
+  cursor: pointer;
+}
+
 .cards.recipes {
   margin: 2rem auto 3rem auto;
   display: grid;
