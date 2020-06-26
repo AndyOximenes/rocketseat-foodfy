@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  padding: 10px 450px 20px 450px;
+  padding: 1rem 25rem 2rem 25rem;
 }
 
 /* === MENU === */
@@ -43,18 +43,18 @@ header .logo img {
 
 main {
   background-color: #fbdfdb;
-  margin-top: 2.7%;
+  margin-top: 1.3rem;
   border-radius: 30px;
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 366px;
+  height: 25rem;
   position: relative;
 }
 
 .main_text {
-  width: 350px;
-  padding: 60px;
+  width: 10rem;
+  padding: 3.75rem;
 }
 
 .main_text h1 {
@@ -62,7 +62,6 @@ main {
   margin-top: 5%;
   font-size: 32px;
   color: #111111;
-  width: 350px;
 }
 
 .main_text p {
