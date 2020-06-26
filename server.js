@@ -26,10 +26,10 @@ server.get("/recipes", (request, response) => {
   return response.render("recipes", { items: recipes });
 });
 
-server.get("/recipes/:recipeId", (req, res) => {
-  const { recipeId } = req.params;
+server.get("/recipes/:recipeId", (request, response) => {
+  const { recipeId } = request.params;
   const recipe = recipes[recipeId];
-  return res.render("recipe", { recipe });
+  return response.render("recipe", { recipe });
 });
 
 server.listen(5000, () => {
