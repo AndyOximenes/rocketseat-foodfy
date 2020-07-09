@@ -1,6 +1,6 @@
 const express = require("express");
 const routes = express.Router();
-const site = require("../controllers/admin.js");
+const site = require("../controllers/site.js");
 
 routes.get("/", site.index);
 routes.get("/about", site.about);
