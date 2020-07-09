@@ -1,4 +1,17 @@
-const modalOverlay = document.querySelector(".modal-overlay");
+// === MENU ACTIVE ===
+
+const currentPage = location.pathname;
+const menuItems = document.querySelectorAll("header .links a");
+
+for (item of menuItems) {
+  if (currentPage.includes(item.getAttribute("href"))) {
+    item.classList.add("active");
+  }
+}
+
+// === OPEN RECIPE ===
+
+// const modalOverlay = document.querySelector(".modal-overlay");
 const cards = document.querySelectorAll(".card");
 
 for (let card of cards) {
