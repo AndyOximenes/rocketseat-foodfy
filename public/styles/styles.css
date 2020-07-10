@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  padding: 1rem 25rem 2rem 25rem;
+  padding: 1rem 20rem 2rem 20rem;
 }
 
 /* === MENU === */
@@ -212,4 +212,26 @@ h2.recipe-infos {
 
 ul {
   list-style-position: inside;
+}
+
+/* === ADMIN PAGE === */
+
+.content-admin {
+  background: #111111;
+  position: relative;
+  padding: 1rem;
+}
+
+.menu-bar-admin {
+  margin: 3.3% auto 0;
+  display: inline-block;
+}
+
+header .logoAdmin img {
+  position: absolute;
+  top: 35%;
+  bottom: 50%;
+  left: 5%;
+  width: 90.6px;
+  height: 26.9px;
 }
