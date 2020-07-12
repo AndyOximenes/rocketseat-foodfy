@@ -2,33 +2,31 @@
 
 {% block content %}
 
-    <section class="content-admin">
-        <h2>Gerenciar receitas</h2>
-        <section class="cards recipes admin">
+    <h2 class="gerenciar_receitas">Gerenciar receitas</h2>
+    <div class="cards_admin">
+        <section class="content-admin card_index_admin">
             {% for item in items %}
-                <div class="card_admin" id="{{loop.index0}}">
-                    <div class="card_image_admin">
+                <section class="card_image">
+                    <div class="card_adm" id="{{loop.index0}}">
                         <img src="{{ item.image }}" alt="Imagem de {{ item.title }}"/>
                     </div>
+                </section>
 
-                    <div class="card_title_admin">
-                        <h3>{{ item.title }}</h3>
-                    </div>
+                <section class="card_details">
+                    <h3>{{ item.title }}</h3>
 
-                    <div class="card_author_admin">
-                        <p>
-                            por
-                            {{ item.author }}
-                        </p>
-                    </div>
+                    <p>
+                        por
+                        {{ item.author }}
+                    </p>
 
-                    <div class="view_card">
-                        <a href="">Visualizar</a>
-                    </div>
-                </div>
+                    <a href="#">Visualizar</a>
+                </section>
+
             {% endfor %}
 
         </section>
-    </section>
+
+    </div>
 
 {% endblock %}

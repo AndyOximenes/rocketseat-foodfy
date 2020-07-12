@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  padding: 1rem 15rem 2rem 15rem;
+  padding: 1rem 20rem 2rem 20rem;
 }
 
 /* === MENU === */
@@ -165,6 +165,7 @@ footer {
 .recipe-image {
   margin-top: 3.5rem;
   border-radius: 0.9375rem;
+  width: 100%;
 }
 
 .recipe-title {
@@ -241,3 +242,43 @@ header .logoAdmin img {
 }
 
 /* === ADMIN CARDS === */
+
+.gerenciar_receitas {
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.content-admin.card_index_admin {
+  display: grid;
+  grid-template-columns: 16.25rem 0.6fr 16.25rem 0.6fr;
+  gap: 1.5rem;
+  position: relative;
+  margin: auto;
+}
+
+.cards_admin .content-admin.card_index_admin .card_adm img {
+  border-radius: 0.535625rem;
+  width: 100%;
+  height: auto;
+}
+
+.cards_admin .content-admin.card_index_admin .card_details h3 {
+  color: #111111;
+  size: 1.125rem;
+  line-height: 1.3125rem;
+  margin-top: 0;
+  margin-bottom: 0.3125rem;
+}
+
+.cards_admin .content-admin.card_index_admin .card_details p {
+  font-size: 0.875rem;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.cards_admin .content-admin.card_index_admin .card_details a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #6558c3;
+  font-weight: bold;
+}
