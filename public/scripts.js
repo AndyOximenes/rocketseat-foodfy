@@ -16,7 +16,7 @@ const cards = document.querySelectorAll(".card");
 
 for (let card of cards) {
   const recipeId = card.getAttribute("id");
-  const cardImg = card.querySelector("img");
+  // const cardImg = card.querySelector("img");
   card.addEventListener("click", () => {
     window.location = `/recipes/${recipeId}`;
   });
