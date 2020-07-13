@@ -6,6 +6,10 @@
   border: 0;
 }
 
+:root {
+  --rocket-color: #7159c1;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -280,7 +284,7 @@ header .logoAdmin img {
 .cards_admin .content-admin.card_index_admin .card_details a {
   text-decoration: none;
   font-size: 0.875rem;
-  color: #6558c3;
+  color: var(--rocket-color);
   font-weight: bold;
 }
 
@@ -292,11 +296,10 @@ header .logoAdmin img {
 
 a.button {
   text-decoration: none;
-  background: #6558c3;
+  background: var(--rocket-color);
   border-radius: 0.25rem;
   font-size: 1rem;
   color: #ffffff;
-  display: inline;
   text-align: center;
   margin: auto 0 auto auto;
   padding: 9px 20px;
