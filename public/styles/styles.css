@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  padding: 1rem 20rem 2rem 20rem;
+  padding: 1rem 25vw 2rem 25vw;
 }
 
 /* === MENU === */
@@ -163,7 +163,7 @@ footer {
 /* === RECIPE PAGE === */
 
 .recipe-image {
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
   border-radius: 0.9375rem;
   width: 100%;
 }
@@ -219,11 +219,15 @@ ul {
 
 .content-admin,
 .content-admin-menu {
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 10vw 1rem 10vw;
 }
 
 .content-admin-menu {
   background: #111111;
+}
+
+.gerenciar_receitas {
+  padding: 3rem 10vw 1rem 10vw;
 }
 
 .menu-bar-admin {
@@ -237,15 +241,12 @@ header .logoAdmin img {
   height: 1.68125rem;
 }
 
-.content-admin h2 {
+/* .content-admin h2 {
   margin-top: 2rem;
-}
+  width: 60%;
+} */
 
 /* === ADMIN CARDS === */
-
-.gerenciar_receitas {
-  padding: 1rem 4rem 1rem 4rem;
-}
 
 .content-admin.card_index_admin {
   display: grid;
@@ -281,4 +282,28 @@ header .logoAdmin img {
   font-size: 0.875rem;
   color: #6558c3;
   font-weight: bold;
+}
+
+/* === RECIPES DETAILS === */
+
+.content.content-admin {
+  padding: 1rem 10vw 1rem 10vw;
+}
+
+a.button {
+  text-decoration: none;
+  background: #6558c3;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #ffffff;
+  display: inline;
+  text-align: center;
+  margin: auto 0 auto auto;
+  padding: 9px 20px;
+}
+
+.recipes-admin-button-text {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
 }

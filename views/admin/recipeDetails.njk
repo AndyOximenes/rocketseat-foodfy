@@ -8,8 +8,14 @@
 
 {% block content %}
 
-    <section class="content">
-        <img class="recipe-image" src="{{recipe.image}}" alt="{{recipe.title}}">
+    <section class="content content-admin">
+        <div class="recipes-admin-button-text">
+            <h2>Receita:
+                {{ recipe.title }}</h2>
+            <a href="/admin//edit" class="button">Editar Receita</a>
+        </div>
+
+        <img class="recipe-image recipe-admin" src="{{recipe.image}}" alt="{{recipe.title}}">
         <h1 class="recipe-title">{{recipe.title}}</h1>
         <p class="recipe-author">por
             {{recipe.author}}</p>
