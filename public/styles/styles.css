@@ -230,9 +230,9 @@ ul {
   background: #111111;
 }
 
-.gerenciar_receitas {
+/* .gerenciar_receitas {
   padding: 3rem 10vw 1rem 10vw;
-}
+} */
 
 .menu-bar-admin {
   display: flex;
@@ -303,6 +303,7 @@ a.button {
   text-align: center;
   margin: auto 0 auto auto;
   padding: 9px 20px;
+  font-weight: bold;
 }
 
 .recipes-admin-button-text {

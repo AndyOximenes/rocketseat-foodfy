@@ -2,13 +2,15 @@
 
 {% block content%}
 
-    <form action="/recipes" method="post">
+    <form action="/admin/recipes" method="POST">
 
         <section class="content-admin">
 
             <h1>Criando receita</h1>
 
             {% include "admin/fields.njk" %}
+
+            <button type="submit">Salvar receita</button>
         </section>
 
     </form>

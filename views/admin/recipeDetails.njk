@@ -12,7 +12,7 @@
         <div class="recipes-admin-button-text">
             <h2>Receita:
                 {{ recipe.title }}</h2>
-            <a href="/admin//edit" class="button">Editar Receita</a>
+            <a href="/admin/recipes/{{ id }}/edit" class="button">Editar receita</a>
         </div>
 
         <img class="recipe-image recipe-admin" src="{{recipe.image}}" alt="{{recipe.title}}">
