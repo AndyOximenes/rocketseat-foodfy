@@ -10,3 +10,7 @@ exports.show = (request, response) => {
   const recipe = data[id];
   return response.render("admin/recipeDetails", { recipe });
 };
+
+exports.create = (request, response) => {
+  return response.render("admin/create");
+};

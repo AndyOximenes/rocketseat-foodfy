@@ -1,7 +1,7 @@
-const recipes = require("../data");
+const data = require("../data");
 
 exports.index = (request, response) => {
-  return response.render("site/index", { items: recipes });
+  return response.render("site/index", { items: data });
 };
 
 exports.about = (request, response) => {
@@ -9,11 +9,11 @@ exports.about = (request, response) => {
 };
 
 exports.recipes = (request, response) => {
-  return response.render("site/recipes", { items: recipes });
+  return response.render("site/recipes", { items: data });
 };
 
 exports.showRecipe = (request, response) => {
-  const { recipeId } = request.params;
-  const recipe = recipes[recipeId];
+  const { id } = request.params;
+  const recipe = data[id];
   return response.render("site/recipe", { recipe });
 };

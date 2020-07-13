@@ -6,10 +6,10 @@ const admin = require("../controllers/admin");
 routes.get("/", site.index);
 routes.get("/about", site.about);
 routes.get("/recipes", site.recipes);
-routes.get("/recipes/:recipeId", site.showRecipe);
+routes.get("/recipes/:id", site.showRecipe);
 
 routes.get("/admin/recipes", admin.index); // Mostrar a lista de receitas
-// routes.get("/admin/recipes/create", recipes.create); // Mostrar formulário de nova receita
+routes.get("/admin/recipes/create", admin.create); // Mostrar formulário de nova receita
 routes.get("/admin/recipes/:id", admin.show); // Exibir detalhes de uma receita
 // routes.get("/admin/recipes/:id/edit", recipes.edit); // Mostrar formulário de edição de receita
 

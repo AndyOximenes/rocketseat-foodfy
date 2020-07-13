@@ -15,10 +15,10 @@ for (item of menuItems) {
 const cards = document.querySelectorAll(".card");
 
 for (let card of cards) {
-  const recipeId = card.getAttribute("id");
+  const id = card.getAttribute("id");
   // const cardImg = card.querySelector("img");
   card.addEventListener("click", () => {
-    window.location = `/recipes/${recipeId}`;
+    window.location = `/recipes/${id}`;
   });
 
   // const imgId = card.getAttribute("id");
