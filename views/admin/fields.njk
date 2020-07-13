@@ -21,9 +21,9 @@
 
 <div class="item">
     <div>Ingredientes</div>
-    <div>
-        <input type="text" name="ingredients" value="{{ recipe.ingredients }}">
-    </div>
+    {% for ingredient in recipe.ingredients %}
+        <li>{{ingredient}}</li>
+    {% endfor %}
 </div>
 
 <div class="item">
