@@ -19,19 +19,33 @@
     </div>
 </div>
 
-<div class="item">
-    <div>Ingredientes</div>
+<div class="item" id="ingredients">
+    <div>Igredientes</div>
     {% for ingredient in recipe.ingredients %}
-        <li>{{ingredient}}</li>
+        <div class="ingredients">
+            <input type="text" name="ingredients[]" value="{{ingredient}}">
+        </div>
+    {% else %}
+        <div class="ingredients">
+            <input type="text" name="ingredients[]">
+        </div>
     {% endfor %}
 </div>
+<button type="button" class="add-ingredient">Adicionar ingrediente</button>
 
-<div class="item">
+<div class="item" id="preparation">
     <div>Modo de preparo</div>
-    <div>
-        <input type="text" name="preparation" value="{{ recipe.preparation }}">
-    </div>
+    {% for preparation in recipe.preparation %}
+        <div class="preparations">
+            <input type="text" name="preparation[]" value="{{preparation}}">
+        </div>
+    {% else %}
+        <div class="preparations">
+            <input type="text" name="preparation[]">
+        </div>
+    {% endfor %}
 </div>
+<button type="button" class="add-preparation">Adicionar preparo</button>
 
 <div class="item">
     <div>Informações adicionais</div>

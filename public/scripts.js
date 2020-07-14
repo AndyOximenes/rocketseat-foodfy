@@ -11,31 +11,14 @@ for (item of menuItems) {
 
 // === OPEN RECIPE ===
 
-// const modalOverlay = document.querySelector(".modal-overlay");
 const cards = document.querySelectorAll(".card");
 
 for (let card of cards) {
   const id = card.getAttribute("id");
-  // const cardImg = card.querySelector("img");
   card.addEventListener("click", () => {
     window.location = `/recipes/${id}`;
   });
-
-  // const imgId = card.getAttribute("id");
-  // const title = card.querySelector("h3").textContent;
-  // const author = card.querySelector("p").textContent;
-
-  // modalOverlay.classList.add("active");
-  // modalOverlay.querySelector("img").src = `assets/${imgId}.png`;
-  // modalOverlay.querySelector("h3").innerHTML = title;
-  // modalOverlay.querySelector("p").innerHTML = author;
-  // });
 }
-
-// document.querySelector(".close-modal").addEventListener("click", () => {
-//   modalOverlay.classList.remove("active");
-//   modalOverlay.querySelector("iframe").src = "";
-// });
 
 var buttons = document.querySelectorAll(".button-hide");
 
@@ -48,4 +31,39 @@ buttons.forEach((button) => {
       e.target.innerHTML = "ESCONDER";
     }
   });
+});
+
+// === ADD INGREDIENTS/PREPARATION RECIPE - POST/PUT ===
+
+const addIngredient = document.querySelector(".add-ingredient");
+const addPreparation = document.querySelector(".add-preparation");
+
+function addField(ID, CLASS) {
+  const id = document.querySelector(ID);
+  const fieldContainer = document.querySelectorAll(CLASS);
+  const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+  if (newField.children[0].value == "") return false;
+
+  newField.children[0].value = "";
+
+  id.appendChild(newField);
+}
+
+addIngredient.addEventListener("click", function () {
+  addField("#ingredients", ".ingredients");
+});
+
+addPreparation.addEventListener("click", function () {
+  addField("#preparation", ".preparations");
+});
+
+// === REALLY DELETE RECIPE? ===
+
+const formDelete = document.querySelector("#form-delete");
+formDelete.addEventListener("submit", (e) => {
+  const confirmation = confirm("Deseja apagar a receita?");
+  if (!confirmation) {
+    e.preventDefault();
+  }
 });

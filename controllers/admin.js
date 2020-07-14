@@ -72,8 +72,6 @@ exports.put = (request, response) => {
 
   data.recipes[id] = { ...request.body };
 
-  console.log(data.recipes[id]);
-
   fs.writeFile("data.json", JSON.stringify(data, null, 2), (err) => {
     if (err) return response.send("Write file error!");
 
