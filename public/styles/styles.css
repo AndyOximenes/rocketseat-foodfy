@@ -221,9 +221,13 @@ ul {
 
 /* === ADMIN PAGE === */
 
+.content-admin {
+  position: relative;
+}
+
 .content-admin,
 .content-admin-menu {
-  padding: 1rem 10vw 1rem 10vw;
+  padding: 1rem 15vw 1rem 15vw;
 }
 
 .content-admin-menu {
@@ -291,7 +295,7 @@ header .logoAdmin img {
 /* === RECIPES DETAILS === */
 
 .content.content-admin {
-  padding: 1rem 10vw 1rem 10vw;
+  padding: 1rem 15vw 1rem 15vw;
 }
 
 a.button {
@@ -308,6 +312,90 @@ a.button {
 
 .recipes-admin-button-text {
   margin-top: 2rem;
+  margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 5fr 1fr;
+}
+
+/* === CREATE RECIPE PAGE === */
+
+.content-admin .item {
+  font-size: 1rem;
+  color: #111111;
+  font-weight: bold;
+}
+
+.content-admin .item input {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: 98%;
+  font-size: 1rem;
+  color: #111111;
+  line-height: 19px;
+  padding: 0.8rem;
+  margin: 0.7% auto 2% auto;
+}
+
+.add-ingredient,
+.add-preparation {
+  font-size: 1rem;
+  color: #6558c3;
+  text-align: right;
+  font-weight: bold;
+}
+
+.content-admin .item textarea {
+  height: 257px;
+  width: 100%;
+
+  resize: none;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+
+  font-family: Roboto-Regular;
+  font-size: 1.2rem;
+  color: #111111;
+  line-height: 24px;
+
+  padding: 0.8rem;
+  /* margin: 0.7% auto 2% auto; */
+}
+
+.recipes-admin-button-text-edit {
+  padding: 2rem 2rem 2rem 0;
+  position: relative;
+}
+
+button.save-recipee,
+button.save-recipe,
+button.delete-recipe {
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.6% 1.4%;
+  font-family: "Roboto", sans-serif;
+}
+
+button.save-recipee {
+  background: #6558c3;
+}
+
+button.save-recipe {
+  background: #6558c3;
+  position: absolute;
+  top: 31%;
+  right: 0;
+}
+
+button.delete-recipe {
+  background: #dc4747;
+  position: absolute;
+  right: 9rem;
+  top: 31%;
 }

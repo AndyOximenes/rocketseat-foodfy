@@ -6,22 +6,20 @@
 
     {% block content%}
 
-        <form action="/admin/recipes/{{ id }}?_method=PUT" method="POST">
+        <section class="content-admin">
+            <form action="/admin/recipes/{{ id }}?_method=PUT" method="POST">
 
-            <section class="content-admin">
-
-                <h1>Editando receita</h1>
+                <div class="recipes-admin-button-text-edit">
+                    <h1>Editando receita</h1>
+                    <button class="delete-recipe" form="form-delete" type="submit">Deletar</button>
+                    <button class="save-recipe" type="submit">Salvar receita</button>
+                </div>
 
                 {% include "admin/fields.njk" %}
 
-                <button type="submit">Salvar receita</button>
+            </form>
 
-            </section>
+            <form id="form-delete" action="/admin/recipes?_method=DELETE" method="POST"></form>
 
-        </form>
-
-        <form id="form-delete" action="/admin/recipes?_method=DELETE" method="POST">
-            <button type="submit">Deletar</button>
-        </form>
-
+        </section>
     {% endblock %}

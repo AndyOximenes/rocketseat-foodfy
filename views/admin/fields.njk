@@ -31,7 +31,7 @@
         </div>
     {% endfor %}
 </div>
-<button type="button" class="add-ingredient">Adicionar ingrediente</button>
+<a type="button" class="add-ingredient">Adicionar novo ingrediente</a>
 
 <div class="item" id="preparation">
     <div>Modo de preparo</div>
@@ -45,11 +45,11 @@
         </div>
     {% endfor %}
 </div>
-<button type="button" class="add-preparation">Adicionar preparo</button>
+<a type="button" class="add-preparation">Adicionar novo passo</a>
 
 <div class="item">
     <div>Informações adicionais</div>
     <div>
-        <input type="text" name="information" value="{{ recipe.information }}">
+        <textarea name="information" cols="30" rows="10" value="{{ recipe.information }}">{{ recipe.information }}</textarea>
     </div>
 </div>
