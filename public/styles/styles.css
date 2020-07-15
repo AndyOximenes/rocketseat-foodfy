@@ -350,7 +350,7 @@ a.add-preparation {
 }
 
 .recipes-admin-button-text-edit {
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 0 2rem 0;
   position: relative;
 }
 
@@ -374,7 +374,7 @@ button.save-recipee {
 button.save-recipe {
   background: #6558c3;
   position: absolute;
-  top: 31%;
+  top: 4vh;
   right: 0;
 }
 
@@ -382,5 +382,5 @@ button.delete-recipe {
   background: #dc4747;
   position: absolute;
   right: 9rem;
-  top: 31%;
+  top: 4vh;
 }

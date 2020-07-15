@@ -27,7 +27,6 @@ exports.edit = (request, response) => {
 };
 
 exports.post = (request, response) => {
-  const keys = Object.keys(request.body);
   let {
     image,
     title,
@@ -36,12 +35,6 @@ exports.post = (request, response) => {
     preparation,
     information,
   } = request.body;
-
-  for (key of keys) {
-    if (request.body[key] == "") {
-      return response.send("Please fill all the fields");
-    }
-  }
 
   data.recipes.push({
     image,
@@ -62,13 +55,6 @@ exports.post = (request, response) => {
 
 exports.put = (request, response) => {
   const { id } = request.params;
-  const keys = Object.keys(request.body);
-
-  for (key of keys) {
-    if (request.body[key] == "") {
-      return response.send("Please fill all the fields");
-    }
-  }
 
   data.recipes[id] = { ...request.body };
 
